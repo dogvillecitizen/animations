@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+ body{
+     background-color: black;
+ }
+
+.green {
+    width: 400px;
+    margin-top: 300px;
+    animation: car-green 2500ms;
+    position: absolute;
+    right: -400px;
+    margin-right: 0px;
+    z-index: 1;
+
+}
+.yellow{
+    width: 400px;
+    margin-top: 300px;
+    animation: car-drive 2000ms;
+   
+    z-index: 2;
+
+}
+
+@keyframes car-drive {
+    0%{
+        transform: translateX(-100%);
+
+    }
+    100%{
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes car-green {
+    0%{
+        transform: translateX(0);
+
+    }
+    100%{
+        transform: translateX(-100%);
+
+    }
+}
+
