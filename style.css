@@ -1,80 +1,75 @@
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
 }
- body{
-     background-color: rgb(113, 175, 233);
- }
+body {
+  background-color: rgb(113, 175, 233);
+}
 
 .sun {
-    width: 200px;
-    margin-top: 50px;
-    margin-left: 50px;
-    position: relative;
-    animation-name: rotating-sun;
-     animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-
+  width: 200px;
+  margin-top: 50px;
+  margin-left: 50px;
+  position: relative;
+  animation-name: rotating-sun;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes rotating-sun {
-    0% {
-        transform: rotate(0deg);
-
-    }
-    100%{
-        transform: rotate(100deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(100deg);
+  }
 }
-.yellow{
-    width: 400px;
-    position: absolute;
-    animation-name: left-anim;
-    animation-delay: 0.6s;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: 1;
+.yellow {
+  width: 400px;
+  position: absolute;
+  animation-name: left-anim;
+  animation-delay: 0.6s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 1;
 }
- @keyframes left-anim {
-     0%{ 
-         top: 400px;
-         left: 0;
-
-     }
-     100% {
-         top: 400px;
-         left: 100%;
-
-     }
- }
-
- .green{
-    width: 400px;
-    position: absolute;
-    animation-name: right-anim;
-    animation-delay: 0.6s;
-    animation-duration: 5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    z-index: 2;
+@keyframes left-anim {
+  0% {
+    top: 400px;
+    left: 0;
+  }
+  100% {
+    top: 400px;
+    left: 100%;
+  }
 }
- @keyframes right-anim {
-     0%{ 
-         top: 400px;
-         right: 0;
 
-     }
-     100% {
-         top: 400px;
-         right: 100%;
-     }
- }
+.green {
+  width: 400px;
+  position: absolute;
+  animation-name: right-anim;
+  animation-delay: 0.6s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  z-index: 2;
+}
+@keyframes right-anim {
+  0% {
+    top: 400px;
+    right: 0;
+  }
+  100% {
+    top: 400px;
+    right: 100%;
+  }
+}
 
- .road {
-     margin-top: 500px;
-     height: 400px;
-     background-color: rgb(88, 88, 88);
- }
+.road {
+  margin-top: 500px;
+  height: 400px;
+  background-color: rgb(88, 88, 88);
+}
