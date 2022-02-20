@@ -4,47 +4,77 @@
     box-sizing: border-box;
 }
  body{
-     background-color: black;
+     background-color: rgb(113, 175, 233);
  }
 
-.green {
-    width: 400px;
-    margin-top: 300px;
-    animation: car-green 2500ms;
-    position: absolute;
-    right: -400px;
-    margin-right: 0px;
-    z-index: 1;
+.sun {
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+    animation-name: rotating-sun;
+     animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
+}
+
+@keyframes rotating-sun {
+    0% {
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(100deg);
+    }
 }
 .yellow{
     width: 400px;
-    margin-top: 300px;
-    animation: car-drive 2000ms;
-   
+    position: absolute;
+    animation-name: left-anim;
+    animation-delay: 0.6s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+ @keyframes left-anim {
+     0%{ 
+         top: 400px;
+         left: 0;
+
+     }
+     100% {
+         top: 400px;
+         left: 100%;
+
+     }
+ }
+
+ .green{
+    width: 400px;
+    position: absolute;
+    animation-name: right-anim;
+    animation-delay: 0.6s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
     z-index: 2;
-
 }
+ @keyframes right-anim {
+     0%{ 
+         top: 400px;
+         right: 0;
 
-@keyframes car-drive {
-    0%{
-        transform: translateX(-100%);
+     }
+     100% {
+         top: 400px;
+         right: 100%;
+     }
+ }
 
-    }
-    100%{
-        transform: translateX(0);
-
-    }
-}
-
-@keyframes car-green {
-    0%{
-        transform: translateX(0);
-
-    }
-    100%{
-        transform: translateX(-100%);
-
-    }
-}
-
+ .road {
+     margin-top: 500px;
+     height: 400px;
+     background-color: rgb(88, 88, 88);
+ }
