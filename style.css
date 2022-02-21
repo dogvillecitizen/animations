@@ -7,6 +7,7 @@ body {
   background-color: rgb(113, 175, 233);
 }
 
+
 .sun {
   width: 200px;
   margin-top: 50px;
@@ -68,11 +69,6 @@ body {
   }
 }
 
-.road {
-  margin-top: 500px;
-  height: 400px;
-  background-color: rgb(88, 88, 88);
-}
 
 
 /* for fun */
@@ -80,7 +76,7 @@ body {
 .main {
   height: 500px;
   width: 600px;
-  margin: 50px auto;
+  margin: 0 auto;
   position: relative;
 }
 .main div {
@@ -99,6 +95,8 @@ body {
   0% {
     background-color: rgb(76, 0, 199);
     border-radius: 0%;
+    width: 0px;
+    height: 0px;
   }
   50% {
     background-color: rgb(255, 230, 0);
