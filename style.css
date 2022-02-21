@@ -73,3 +73,133 @@ body {
   height: 400px;
   background-color: rgb(88, 88, 88);
 }
+
+
+/* for fun */
+
+.main {
+  height: 500px;
+  width: 600px;
+  margin: 50px auto;
+  position: relative;
+}
+.main div {
+  width: 50px;
+  height: 50px;
+  display: inline;
+  position: absolute;
+  animation-name: heartbeat;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-fill-mode: backwards;
+  animation-direction: alternate;
+}
+@keyframes heartbeat {
+  0% {
+    background-color: rgb(76, 0, 199);
+    border-radius: 0%;
+  }
+  50% {
+    background-color: rgb(255, 230, 0);
+  }
+  100% {
+    background-color: rgb(180, 0, 235);
+    border-radius: 50%;
+  }
+}
+
+.line1box1 {
+  left: 100px;
+}
+.line1box2 {
+  left: 150px;
+}
+
+.line1box3 {
+  left: 350px;
+}
+.line1box4 {
+  left: 400px;
+}
+.line2box1 {
+  left: 50px;
+  top: 50px;
+}
+
+.line2box2 {
+  left: 200px;
+  top: 50px;
+}
+.line2box3 {
+  left: 300px;
+  top: 50px;
+}
+
+.line2box4 {
+  left: 450px;
+  top: 50px;
+}
+
+.line3box1 {
+  left: 0;
+  top: 100px;
+}
+.line3box2 {
+  left: 250px;
+  top: 100px;
+}
+
+.line3box3 {
+  left: 500px;
+  top: 100px;
+}
+.line4box1 {
+  left: 0;
+  top: 150px;
+}
+.line4box2 {
+  left: 500px;
+  top: 150px;
+}
+
+.line5box1 {
+  left: 50px;
+  top: 200px;
+}
+.line5box2 {
+  left: 450px;
+  top: 200px;
+}
+.line6box1 {
+  left: 100px;
+  top: 250px;
+}
+.line6box2 {
+  left: 400px;
+  top: 250px;
+}
+
+.line7box1 {
+  left: 150px;
+  top: 300px;
+}
+
+.line7box2 {
+  left: 350px;
+  top: 300px;
+}
+
+.line8box1 {
+  left: 200px;
+  top: 350px;
+}
+
+.line8box2 {
+  left: 300px;
+  top: 350px;
+}
+.line9box1 {
+  left: 250px;
+  top: 400px;
+}
